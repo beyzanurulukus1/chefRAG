@@ -1,0 +1,7 @@
+# Güvenlik ve Gereksiz Dosyalar
+.env
+venv/
+__pycache__/
+chat_sessions.json
+chroma_db/
+.DS_Store
