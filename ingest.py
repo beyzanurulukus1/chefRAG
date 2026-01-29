@@ -28,7 +28,7 @@ def split_documents(documents):
     return text_splitter.split_documents(documents)
 
 def ingest_to_vector_db(chunks):
-    # TEKNİK ANLATIM: Açık kaynaklı bir embedding modeli kullanıyoruz (all-MiniLM-L6-v2)
+    # Açık kaynaklı bir embedding modeli kullanıyoruz (all-MiniLM-L6-v2)
     # Bu sayede API limitlerine takılmadan yüksek performanslı vektörleştirme sağlıyoruz.
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     
