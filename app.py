@@ -12,7 +12,7 @@ def local_css():
             color: #fafafa;
         }
         
-        /* Sidebar (Navbar) Tasarımı */
+        /* Navbar Tasarımı */
         [data-testid="stSidebar"] {
             background-image: linear-gradient(#2e3440, #1a1c23);
             border-right: 1px solid #4c566a;
@@ -84,14 +84,14 @@ def load_sessions():
 # --- 2. UI VE OTURUM YÖNETİMİ ---
 st.set_page_config(page_title="ChefRAG", page_icon="🍳", layout="wide")
 
-# Veriyi diskten yükle (İlk açılışta)
+# Veriyi diskten yükle
 if "sessions" not in st.session_state:
     st.session_state.sessions = load_sessions()
 
 if "active_session" not in st.session_state:
     st.session_state.active_session = None
 
-# Sidebar (Navbar)
+# Navbar
 with st.sidebar:
     st.title("🥨 Mutfak Arşivi")
     if st.button("➕ Yeni Sohbet Başlat", use_container_width=True):
